@@ -1,0 +1,71 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+          http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<display-name>zapforms springdemo1</display-name>
+
+	<context-param>
+		<param-name>contextClass</param-name>
+		<param-value>
+          org.springframework.web.context.support.AnnotationConfigWebApplicationContext
+      </param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>com.globalcollect.infra2.landscapetool.config.Config</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextClass</param-name>
+			<param-value>
+              org.springframework.web.context.support.AnnotationConfigWebApplicationContext
+          </param-value>
+		</init-param>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>com.globalcollect.infra2.landscapetool.config.Config</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern></url-pattern>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Zapforms security</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>zapforms</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+
+	<!-- Define the Login Configuration for this Application -->
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>zapforms</realm-name>
+	</login-config>
+
+	<!-- Security roles referenced by this web application -->
+	<security-role>
+		<description>
+      The role that is required to log in to zapforms demo
+    </description>
+		<role-name>zapforms</role-name>
+	</security-role>
+
+</web-app>
