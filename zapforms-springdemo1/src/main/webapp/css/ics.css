@@ -1,0 +1,85 @@
+		#customerId {
+			position: absolute; 
+			left: 700px;	
+            background-color:rgba(0, 0, 0, 0);
+    		color:white;
+    		border: none;
+    		outline:none;
+    	    border-bottom: solid;
+            border-bottom-width: thin;			
+		}
+        #header_block {
+            margin-left: auto;
+            margin-right: auto;
+            width: 810px;
+            height: 60px;
+            background-color: #00E5ff;
+            color: #4773cd;
+            font-family: monospace;
+        }
+        #sub_header_block {
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            height: 50px;
+            border: 2px solid;
+            color: #260841;
+            text-align: right;
+            font-family: monospace;
+            font-size: larger;
+        }
+        #content_block {
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            color: #FFFFFF;
+            text-align: right;
+            font-family: monospace;
+        }
+        #spacer{
+        	width: 100px;
+        }
+        #content_block #titelnaam {
+            position: relative;
+            left: -10px;
+            color: #000770;
+        }
+        #content_block #underlined {
+            position: absolute;
+    		color:white;
+    		border: none;
+    		outline:none;
+            right: 550px;
+        }        
+        #footer_block {
+            margin-left: auto;
+            margin-right: auto;
+            width: 810px;
+            height: 30px;            
+            background-color: #00E5ff;
+            color: #4773cd;
+            font-family: monospace;
+            font-size: larger;
+        }
+        #ICA_TASK_FLOW_CONTROL, #ICA_CUST_ID {
+        	visibility: hidden;
+        }
+        #operateCode, #titelnaam {
+			position: relative; 
+			right: 5px;
+			color: #000770;
+		}
+        #customerName, #customerBalance, #amount, #description, #inEuro, #balance {
+            background-color:rgba(0, 0, 0, 0);
+    		color:white;
+    		border: none;
+    		outline:none;
+    	    border-bottom: solid;
+            border-bottom-width: thin;
+        }        
+        
+        
+        body{
+            background-color: #616ad3;             
+        }
+
