@@ -42,7 +42,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-
+<!-- 
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>Zapforms security</web-resource-name>
@@ -52,20 +52,20 @@
 			<role-name>zapforms</role-name>
 		</auth-constraint>
 	</security-constraint>
+ -->
 
-
-	<!-- Define the Login Configuration for this Application -->
+	<!-- Define the Login Configuration for this Application 
 	<login-config>
 		<auth-method>BASIC</auth-method>
 		<realm-name>zapforms</realm-name>
 	</login-config>
-
-	<!-- Security roles referenced by this web application -->
+-->
+	<!-- Security roles referenced by this web application 
 	<security-role>
 		<description>
       The role that is required to log in to zapforms demo
     </description>
 		<role-name>zapforms</role-name>
 	</security-role>
-
+-->
 </web-app>

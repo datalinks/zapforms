@@ -20,7 +20,7 @@ public interface LandscapeVariables {
     
     //  neo4j url
     public String GC_NEO4J_DB_URL = "http://localhost:7474/db/data/";
-    public String GC_NEO4J_CLEANUP_URL = "http://localhost:7474/db/data/transaction/commit";
+    //public String GC_NEO4J_CLEANUP_URL = "http://localhost:7474/db/data/transaction/commit";
     public String GC_NEO4J_LABEL_DATACENTERS = "GC_DATACENTERS";
     
     
