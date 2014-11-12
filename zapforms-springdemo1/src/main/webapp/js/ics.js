@@ -19,15 +19,15 @@
 
 	jQuery(document).keypress(function(e) {
 	    code = e.keyCode ? e.keyCode : e.which;
-	    if(code.toString() == 17) { // CTRL Q
+	    if(code.toString() == 25) { // CTRL Y
 			if ($('#currency').is(":visible")) {
 				$("#currency").hide();
 			} else {
 				$("#currency").show();
 			}
 	    }
-	    if(code.toString() == 25) {   // CTRL Y
-			window.location.href = 'showCustomers';	
+	    if(code.toString() == 17) {   // CTRL Q
+			window.location.href = './';	
 	    }	    
 	});
 
